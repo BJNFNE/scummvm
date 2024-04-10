@@ -97,7 +97,7 @@ public:
 	}
 
 	const char *getOriginalCopyright() const override {
-		return "(C) ICOM Simulations";
+		return "(C) 1981-1994 ICOM Simulations";
 	}
 
 	const DebugChannelDef *getDebugChannels() const override {
