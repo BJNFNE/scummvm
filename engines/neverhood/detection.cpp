@@ -157,7 +157,7 @@ public:
 	}
 
 	const char *getOriginalCopyright() const override {
-		return "The Neverhood (C) The Neverhood, Inc.";
+		return "The Neverhood (C) 1996-1999 The Neverhood, Inc.";
 	}
 };
 
