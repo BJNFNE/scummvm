@@ -261,7 +261,7 @@ public:
 	}
 
 	const char *getOriginalCopyright() const override {
-		return "Myst III Exile (C) Presto Studios";
+		return "Myst III Exile (C) 1992-2002 Presto Studios";
 	}
 
 	const DebugChannelDef *getDebugChannels() const override {
