@@ -241,7 +241,7 @@ public:
 	}
 
 	const char *getOriginalCopyright() const override {
-		return "Nippon Safes, Inc. (C) Dynabyte";
+		return "Nippon Safes, Inc. (C) 1991-1997 Dynabyte";
 	}
 
 	const DebugChannelDef *getDebugChannels() const override {
