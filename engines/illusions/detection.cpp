@@ -125,7 +125,7 @@ public:
 	}
 
 	const char *getOriginalCopyright() const override {
-		return "(C) The Illusions Gaming Company";
+		return "(C) 1993-1998 The Illusions Gaming Company";
 	}
 };
 
