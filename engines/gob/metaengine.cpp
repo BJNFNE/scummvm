@@ -28,6 +28,12 @@
 #include "engines/advancedDetector.h"
 #include "engines/obsolete.h"
 
+#include "common/translation.h"
+
+#include "backends/keymapper/action.h"
+#include "backends/keymapper/keymapper.h"
+#include "backends/keymapper/standard-actions.h"
+
 #include "gob/gameidtotype.h"
 #include "gob/gob.h"
 #include "gob/obsolete.h"
@@ -49,6 +55,7 @@ public:
 	}
 
 	Common::Error createInstance(OSystem *syst, Engine **engine, const ADGameDescription *desc) const override;
+	Common::KeymapArray initKeymaps(const char *target) const override;
 };
 
 bool GobMetaEngine::hasFeature(MetaEngineFeature f) const {
@@ -56,8 +63,55 @@ bool GobMetaEngine::hasFeature(MetaEngineFeature f) const {
 }
 
 bool Gob::GobEngine::hasFeature(EngineFeature f) const {
-	return
-		(f == kSupportsReturnToLauncher);
+	return (f == kSupportsReturnToLauncher);
+}
+
+Common::KeymapArray GobMetaEngine::initKeymaps(const char *target) const {
+	using namespace Common;
+	using namespace Gob;
+
+	Keymap *engineKeyMap = new Keymap(Keymap::kKeymapTypeGame, "gob-main", "Gob main");
+	Action *act;
+
+	act = new Action(kStandardActionLeftClick, _("Left Click"));
+	act->setLeftClickEvent();
+	act->addDefaultInputMapping("MOUSE_LEFT");
+	act->addDefaultInputMapping("JOY_A");
+	engineKeyMap->addAction(act);
+
+	act = new Action(kStandardActionRightClick, _("Right Click"));
+	act->setRightClickEvent();
+	act->addDefaultInputMapping("MOUSE_RIGHT");
+	act->addDefaultInputMapping("JOY_B");
+	engineKeyMap->addAction(act);
+
+	act = new Action(kStandardActionSkip, _("Skip"));
+	act->setKeyEvent(KeyState(KEYCODE_ESCAPE, ASCII_ESCAPE));
+	act->addDefaultInputMapping("ESCAPE");
+	act->addDefaultInputMapping("JOY_Y");
+	act->allowKbdRepeats();
+	engineKeyMap->addAction(act);
+
+	act = new Action("QUIT", _("Quit"));
+	act->setKeyEvent(KeyState(KEYCODE_MENU));
+	act->addDefaultInputMapping("CTRL+M");
+	act->addDefaultInputMapping("JOY_Y");
+	act->allowKbdRepeats();
+	engineKeyMap->addAction(act);
+
+	act = new Action("PAUSE", _("Pause Game"));
+	act->setCustomEngineActionEvent(KEYCODE_p);
+	act->addDefaultInputMapping("p");
+	act->addDefaultInputMapping("PAUSE");
+	engineKeyMap->addAction(act);
+
+	act = new Action("DEBUGGER", _("Open Debugger"));
+	act->setCustomEngineActionEvent(KEYCODE_d);
+	act->addDefaultInputMapping("d");
+	act->addDefaultInputMapping("DEBUGGER");
+	engineKeyMap->addAction(act);
+
+	return Keymap::arrayOf(engineKeyMap);
 }
 
 Common::Error GobMetaEngine::createInstance(OSystem *syst, Engine **engine, const ADGameDescription *desc) const {
@@ -66,7 +120,6 @@ Common::Error GobMetaEngine::createInstance(OSystem *syst, Engine **engine, cons
 	((Gob::GobEngine *)*engine)->initGame(gd);
 	return Common::kNoError;
 }
-
 
 #if PLUGIN_ENABLED_DYNAMIC(GOB)
 	REGISTER_PLUGIN_DYNAMIC(GOB, PLUGIN_TYPE_ENGINE, GobMetaEngine);
@@ -111,4 +164,3 @@ void GobEngine::initGame(const GOBGameDescription *gd) {
 }
 
 } // End of namespace Gob
-
