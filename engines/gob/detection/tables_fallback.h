@@ -407,7 +407,7 @@ static const ADFileBasedFallback fileBased[] = {
 	{ &fallbackDescs[ 5].desc, { "intro.stk", "scaa.imd", "scba.imd", "scbf.imd", 0 } },
 	{ &fallbackDescs[ 6].desc, { "intro.stk", "imd.itk", 0 } },
 	{ &fallbackDescs[ 7].desc, { "intro.stk", "mus_gob3.lic", 0 } },
-	{ &fallbackDescs[ 8].desc, { "intro.stk", "woodruff.itk", 0 } },
+	{ &fallbackDescs[ 8].desc, { "intro.stk", 0, 0 } },
 	{ &fallbackDescs[ 9].desc, { "intro.stk", "commun1.itk", 0 } },
 	{ &fallbackDescs[10].desc, { "intro.stk", "commun1.itk", "musmac1.mid", 0 } },
 	{ &fallbackDescs[11].desc, { "intro.stk", "commun1.itk", "lost.lic", 0 } },
