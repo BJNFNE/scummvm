@@ -85,6 +85,7 @@ static const GameIdToType gameIdToType[] = {
 	{     "adiboudchoubanquise", kGameTypeNone },
 	{     "adiboudchoucampagne", kGameTypeNone },
 	{ "adiboudchoujunglesavane", kGameTypeNone },
+	{ "asterixoperationgetafix", kGameTypeNone },
 	{                   nullptr, kGameTypeNone }
 };
 
