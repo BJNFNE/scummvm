@@ -82,6 +82,7 @@ static const PlainGameDescriptor gobGames[] = {
 	{"adiboudchoubanquise", "Adiboud'chou sur la banquise"},
 	{"adiboudchoucampagne", "Adiboud'chou a la campagne"},
 	{"adiboudchoujunglesavane", "Adiboud'chou dans la jungle et la savane"},
+	{"asterixoperationgetafix", "Asterix Operation Getafix"},
 	{0, 0}
 };
 
@@ -116,6 +117,7 @@ static const GOBGameDescription gameDescriptions[] = {
 	#include "gob/detection/tables_adibou3.h"	// Adibou 3 / Adiboo 3 series
 	#include "gob/detection/tables_adiboupresente.h"	// Adibou présente series
 	#include "gob/detection/tables_adiboudchou.h"		// Adiboud'chou / Addy Buschu series
+	#include "gob/detection/tables_asterix.h"		// Asterix series
 	#include "gob/detection/tables_crousti.h"   // Croustibat
 
 	{ AD_TABLE_END_MARKER, kFeaturesNone, 0, 0, 0}
