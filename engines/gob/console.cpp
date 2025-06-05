@@ -42,7 +42,7 @@ GobConsole::GobConsole(GobEngine *vm) : GUI::Debugger(), _vm(vm), _cheater(nullp
 	registerCmd("var16",        WRAP_METHOD(GobConsole, cmd_var16));
 	registerCmd("var32",        WRAP_METHOD(GobConsole, cmd_var32));
 	registerCmd("varString",    WRAP_METHOD(GobConsole, cmd_varString));
-	registerCmd("cheat",        WRAP_METHOD(GobConsole, cmd_cheat));
+	registerCmd("geishaCheat",  WRAP_METHOD(GobConsole, cmd_geishaCheat));
 	registerCmd("listArchives", WRAP_METHOD(GobConsole, cmd_listArchives));
 }
 
@@ -69,7 +69,7 @@ bool GobConsole::cmd_Help(int, const char **) {
 	debugPrintf("--------\n");
 	debugPrintf(" continue - returns back to the game\n");
 	debugPrintf(" listArchives - shows which Archives are currently being used\n");
-	debugPrintf(" cheat - enables Cheats for Geisha\n");
+	debugPrintf(" geishaCheat - enables Cheats for Geisha\n");
 	debugPrintf("\n");
 	debugPrintf("Variables\n");
 	debugPrintf("---------\n");
@@ -200,11 +200,14 @@ bool GobConsole::cmd_varString(int argc, const char **argv) {
 	return true;
 }
 
-bool GobConsole::cmd_cheat(int argc, const char **argv) {
-	if (_cheater)
-		return _cheater->cheat(*this);
-
-	return true;
+bool GobConsole::cmd_geishaCheat(int argc, const char **argv) {
+    if (_vm->getGameType() == kGameTypeGeisha) {
+        debugPrintf("Game is Geisha. Activating cheat.\n");
+        return _cheater->cheat(*this);
+    } else {
+        debugPrintf("Game is not Geisha. Cannot activate cheat.\n");
+        return false;
+    }
 }
 
 bool GobConsole::cmd_listArchives(int argc, const char **argv) {

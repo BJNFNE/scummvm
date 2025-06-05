@@ -57,7 +57,7 @@ private:
 	bool cmd_var32(int argc, const char **argv);
 	bool cmd_varString(int argc, const char **argv);
 
-	bool cmd_cheat(int argc, const char **argv);
+	bool cmd_geishaCheat(int argc, const char **argv);
 
 	bool cmd_listArchives(int argc, const char **argv);
 };
