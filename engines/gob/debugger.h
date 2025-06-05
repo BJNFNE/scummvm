@@ -25,8 +25,8 @@
  *
  */
 
-#ifndef GOB_CONSOLE_H
-#define GOB_CONSOLE_H
+#ifndef GOB_DEBUGGER_H
+#define GOB_DEBUGGER_H
 
 #include "gui/debugger.h"
 
@@ -35,10 +35,10 @@ namespace Gob {
 class GobEngine;
 class Cheater;
 
-class GobConsole : public GUI::Debugger {
+class GobDebugger : public GUI::Debugger {
 public:
-	GobConsole(GobEngine *vm);
-	~GobConsole(void) override;
+	GobDebugger(GobEngine *vm);
+	~GobDebugger(void) override;
 
 	void registerCheater(Cheater *cheater);
 	void unregisterCheater();

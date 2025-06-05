@@ -7,10 +7,10 @@ MODULE_OBJS := \
 	cheater.o \
 	cheater_geisha.o \
 	cmpfile.o \
-	console.o \
 	databases.o \
 	dataio.o \
 	dbase.o \
+	debugger.o \
 	decfile.o \
 	draw.o \
 	draw_v1.o \

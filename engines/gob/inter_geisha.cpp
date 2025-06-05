@@ -62,11 +62,11 @@ Inter_Geisha::Inter_Geisha(GobEngine *vm) : Inter_v1(vm),
 
 	_cheater = new Cheater_Geisha(vm, _diving, _penetration);
 
-	_vm->_console->registerCheater(_cheater);
+	_vm->_debugger->registerCheater(_cheater);
 }
 
 Inter_Geisha::~Inter_Geisha() {
-	_vm->_console->unregisterCheater();
+	_vm->_debugger->unregisterCheater();
 
 	delete _cheater;
 

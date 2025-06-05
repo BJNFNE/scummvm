@@ -35,7 +35,7 @@
 
 #include "engines/engine.h"
 
-#include "gob/console.h"
+#include "gob/debugger.h"
 #include "gob/detection/detection.h"
 
 /**
@@ -201,7 +201,7 @@ public:
 	bool _copyProtection;
 	bool _noMusic;
 
-	GobConsole *_console;
+	GobDebugger *_debugger;
 
 	bool _resourceSizeWorkaround;
 	bool _enableAdibou2FreeBananasWorkaround;

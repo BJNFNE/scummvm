@@ -25,7 +25,7 @@
  *
  */
 
-#include "gob/console.h"
+#include "gob/debugger.h"
 #include "gob/gob.h"
 #include "gob/inter.h"
 #include "gob/dataio.h"
@@ -33,31 +33,31 @@
 
 namespace Gob {
 
-GobConsole::GobConsole(GobEngine *vm) : GUI::Debugger(), _vm(vm), _cheater(nullptr) {
-	registerCmd("continue",     WRAP_METHOD(GobConsole, cmdExit));
-	registerCmd("help",      	WRAP_METHOD(GobConsole, cmd_Help));
-	registerCmd("varSize",      WRAP_METHOD(GobConsole, cmd_varSize));
-	registerCmd("dumpVars",     WRAP_METHOD(GobConsole, cmd_dumpVars));
-	registerCmd("var8",         WRAP_METHOD(GobConsole, cmd_var8));
-	registerCmd("var16",        WRAP_METHOD(GobConsole, cmd_var16));
-	registerCmd("var32",        WRAP_METHOD(GobConsole, cmd_var32));
-	registerCmd("varString",    WRAP_METHOD(GobConsole, cmd_varString));
-	registerCmd("cheat",        WRAP_METHOD(GobConsole, cmd_cheat));
-	registerCmd("listArchives", WRAP_METHOD(GobConsole, cmd_listArchives));
+GobDebugger::GobDebugger(GobEngine *vm) : GUI::Debugger(), _vm(vm), _cheater(nullptr) {
+	registerCmd("continue",     WRAP_METHOD(GobDebugger, cmdExit));
+	registerCmd("help",      	WRAP_METHOD(GobDebugger, cmd_Help));
+	registerCmd("varSize",      WRAP_METHOD(GobDebugger, cmd_varSize));
+	registerCmd("dumpVars",     WRAP_METHOD(GobDebugger, cmd_dumpVars));
+	registerCmd("var8",         WRAP_METHOD(GobDebugger, cmd_var8));
+	registerCmd("var16",        WRAP_METHOD(GobDebugger, cmd_var16));
+	registerCmd("var32",        WRAP_METHOD(GobDebugger, cmd_var32));
+	registerCmd("varString",    WRAP_METHOD(GobDebugger, cmd_varString));
+	registerCmd("cheat",        WRAP_METHOD(GobDebugger, cmd_cheat));
+	registerCmd("listArchives", WRAP_METHOD(GobDebugger, cmd_listArchives));
 }
 
-GobConsole::~GobConsole() {
+GobDebugger::~GobDebugger() {
 }
 
-void GobConsole::registerCheater(Cheater *cheater) {
+void GobDebugger::registerCheater(Cheater *cheater) {
 	_cheater = cheater;
 }
 
-void GobConsole::unregisterCheater() {
+void GobDebugger::unregisterCheater() {
 	_cheater = nullptr;
 }
 
-bool GobConsole::cmd_Help(int, const char **) {
+bool GobDebugger::cmd_Help(int, const char **) {
 	debugPrintf("Debug\n");
 	debugPrintf("-----\n");
 	debugPrintf(" debugflag_list - Lists the available debug flags and their status\n");
@@ -83,12 +83,12 @@ bool GobConsole::cmd_Help(int, const char **) {
 	return true;
 }
 
-bool GobConsole::cmd_varSize(int argc, const char **argv) {
+bool GobDebugger::cmd_varSize(int argc, const char **argv) {
 	debugPrintf("Size of the variable space: %d bytes\n", _vm->_inter->_variables->getSize());
 	return true;
 }
 
-bool GobConsole::cmd_dumpVars(int argc, const char **argv) {
+bool GobDebugger::cmd_dumpVars(int argc, const char **argv) {
 	if (!_vm->_inter->_variables)
 		return true;
 
@@ -107,7 +107,7 @@ bool GobConsole::cmd_dumpVars(int argc, const char **argv) {
 	return true;
 }
 
-bool GobConsole::cmd_var8(int argc, const char **argv) {
+bool GobDebugger::cmd_var8(int argc, const char **argv) {
 	if (argc == 1) {
 		debugPrintf("Usage: var8 <var offset> (<value>)\n");
 		return true;
@@ -130,7 +130,7 @@ bool GobConsole::cmd_var8(int argc, const char **argv) {
 	return true;
 }
 
-bool GobConsole::cmd_var16(int argc, const char **argv) {
+bool GobDebugger::cmd_var16(int argc, const char **argv) {
 	if (argc == 1) {
 		debugPrintf("Usage: var16 <var offset> (<value>)\n");
 		return true;
@@ -153,7 +153,7 @@ bool GobConsole::cmd_var16(int argc, const char **argv) {
 	return true;
 }
 
-bool GobConsole::cmd_var32(int argc, const char **argv) {
+bool GobDebugger::cmd_var32(int argc, const char **argv) {
 	if (argc == 1) {
 		debugPrintf("Usage: var32 <var offset> (<value>)\n");
 		return true;
@@ -176,7 +176,7 @@ bool GobConsole::cmd_var32(int argc, const char **argv) {
 	return true;
 }
 
-bool GobConsole::cmd_varString(int argc, const char **argv) {
+bool GobDebugger::cmd_varString(int argc, const char **argv) {
 	if (argc == 1) {
 		debugPrintf("Usage: varString <var offset> (<value>)\n");
 		return true;
@@ -200,14 +200,14 @@ bool GobConsole::cmd_varString(int argc, const char **argv) {
 	return true;
 }
 
-bool GobConsole::cmd_cheat(int argc, const char **argv) {
+bool GobDebugger::cmd_cheat(int argc, const char **argv) {
 	if (_cheater)
 		return _cheater->cheat(*this);
 
 	return true;
 }
 
-bool GobConsole::cmd_listArchives(int argc, const char **argv) {
+bool GobDebugger::cmd_listArchives(int argc, const char **argv) {
 	Common::Array<ArchiveInfo> info;
 
 	_vm->_dataIO->getArchiveInfo(info);
