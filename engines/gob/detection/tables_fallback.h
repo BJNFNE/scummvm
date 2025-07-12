@@ -35,7 +35,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"gob1",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -48,7 +48,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"gob1",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -61,7 +61,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"gob2",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -74,7 +74,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"gob2",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformMacintosh,
 			ADGF_NO_FLAGS,
@@ -87,7 +87,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"gob2",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -100,7 +100,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"bargon",
 			"",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -113,7 +113,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"gob3",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -126,7 +126,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"gob3",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -139,7 +139,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"woodruff",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -152,7 +152,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"lit",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -165,7 +165,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"lit",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformMacintosh,
 			ADGF_NO_FLAGS,
@@ -178,7 +178,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"lit",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -191,7 +191,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"urban",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -204,7 +204,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"playtoons1",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -230,7 +230,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"playtoons3",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -243,7 +243,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"playtoons4",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -256,7 +256,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"playtoons5",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -269,7 +269,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"playtnck1",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -282,7 +282,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"bambou",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -295,7 +295,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"fascination",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -308,7 +308,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"geisha",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -321,7 +321,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"littlered",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -334,7 +334,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"littlered",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformAmiga,
 			ADGF_NO_FLAGS,
@@ -347,7 +347,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"onceupon",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformUnknown,
 			ADGF_NO_FLAGS,
@@ -360,7 +360,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"adi2",
 			"",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -373,7 +373,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"adi4",
 			"",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformWindows,
 			ADGF_NO_FLAGS,
@@ -386,7 +386,7 @@ static const GOBGameDescription fallbackDescs[] = {
 		{
 			"coktelplayer",
 			"unknown",
-			AD_ENTRY1(0, 0),
+			AD_ENTRY1s(0, 0, 0),
 			UNK_LANG,
 			kPlatformDOS,
 			ADGF_NO_FLAGS,
@@ -453,7 +453,7 @@ static const GOBGameDescription fallbackOnceUpon[kOnceUponATimeMAX][kOnceUponATi
 			{
 				"abracadabra",
 				"",
-				AD_ENTRY1(0, 0),
+				AD_ENTRY1s(0, 0, 0),
 				UNK_LANG,
 				kPlatformDOS,
 				ADGF_NO_FLAGS,
@@ -466,7 +466,7 @@ static const GOBGameDescription fallbackOnceUpon[kOnceUponATimeMAX][kOnceUponATi
 			{
 				"abracadabra",
 				"",
-				AD_ENTRY1(0, 0),
+				AD_ENTRY1s(0, 0, 0),
 				UNK_LANG,
 				kPlatformAmiga,
 				ADGF_NO_FLAGS,
@@ -479,7 +479,7 @@ static const GOBGameDescription fallbackOnceUpon[kOnceUponATimeMAX][kOnceUponATi
 			{
 				"abracadabra",
 				"",
-				AD_ENTRY1(0, 0),
+				AD_ENTRY1s(0, 0, 0),
 				UNK_LANG,
 				kPlatformAtariST,
 				ADGF_NO_FLAGS,
@@ -494,7 +494,7 @@ static const GOBGameDescription fallbackOnceUpon[kOnceUponATimeMAX][kOnceUponATi
 			{
 				"babayaga",
 				"",
-				AD_ENTRY1(0, 0),
+				AD_ENTRY1s(0, 0, 0),
 				UNK_LANG,
 				kPlatformDOS,
 				ADGF_NO_FLAGS,
@@ -507,7 +507,7 @@ static const GOBGameDescription fallbackOnceUpon[kOnceUponATimeMAX][kOnceUponATi
 			{
 				"babayaga",
 				"",
-				AD_ENTRY1(0, 0),
+				AD_ENTRY1s(0, 0, 0),
 				UNK_LANG,
 				kPlatformAmiga,
 				ADGF_NO_FLAGS,
@@ -520,7 +520,7 @@ static const GOBGameDescription fallbackOnceUpon[kOnceUponATimeMAX][kOnceUponATi
 			{
 				"babayaga",
 				"",
-				AD_ENTRY1(0, 0),
+				AD_ENTRY1s(0, 0, 0),
 				UNK_LANG,
 				kPlatformAtariST,
 				ADGF_NO_FLAGS,
