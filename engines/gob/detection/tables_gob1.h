@@ -168,7 +168,7 @@
 	kFeaturesCD,
 	0, 0, 0
 },
-{ // CD 1.02 version. Multilingual
+{ // Multilingual
 	{
 		"gob1",
 		"CD v1.02",
@@ -181,7 +181,7 @@
 	kFeaturesCD,
 	0, 0, 0
 },
-{ // CD 1.02 version. Multilingual
+{ // Multilingual
 	{
 		"gob1",
 		"CD v1.02",
@@ -194,7 +194,7 @@
 	kFeaturesCD,
 	0, 0, 0
 },
-{ // CD 1.02 version. Multilingual
+{ // Multilingual
 	{
 		"gob1",
 		"CD v1.02",
@@ -207,7 +207,7 @@
 	kFeaturesCD,
 	0, 0, 0
 },
-{ // CD 1.02 version. Multilingual
+{ // Multilingual
 	{
 		"gob1",
 		"CD v1.02",
@@ -220,7 +220,7 @@
 	kFeaturesCD,
 	0, 0, 0
 },
-{ // CD 1.02 version. Multilingual
+{ // Multilingual
 	{
 		"gob1",
 		"CD v1.02",
