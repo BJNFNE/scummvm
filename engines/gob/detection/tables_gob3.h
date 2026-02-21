@@ -180,7 +180,7 @@
 	0, 0, 0
 },
 {
-	{
+	{ // Used by ADI4 unlockable games
 		"gob3",
 		"v1.00",
 		AD_ENTRY2s("intro.stk",   "16b014bf32dbd6ab4c5163c44f56fed1", 445104,

@@ -396,7 +396,7 @@
 
 // -- Windows --
 
-{ // Supplied by Hkz on #scummvm
+{ // Supplied by Hkz on #scummvm - Multilingual - Used by ADI4 unlockable games
 	{
 		"gob1",
 		"",
@@ -410,7 +410,7 @@
 	kFeaturesAdLib,
 	0, 0, 0
 },
-{ // Supplied by Hkz on #scummvm
+{ // Supplied by Hkz on #scummvm - Multilingual - Used by ADI4 unlockable games
 	{
 		"gob1",
 		"",
@@ -424,7 +424,7 @@
 	kFeaturesAdLib,
 	0, 0, 0
 },
-{ // Supplied by Hkz on #scummvm
+{ // Supplied by Hkz on #scummvm - Multilingual - Used by ADI4 unlockable games
 	{
 		"gob1",
 		"",
@@ -438,7 +438,7 @@
 	kFeaturesAdLib,
 	0, 0, 0
 },
-{ // Supplied by Hkz on #scummvm
+{ // Supplied by Hkz on #scummvm - Multilingual - Used by ADI4 unlockable games
 	{
 		"gob1",
 		"",
@@ -452,7 +452,7 @@
 	kFeaturesAdLib,
 	0, 0, 0
 },
-{ // Supplied by Hkz on #scummvm
+{ // Supplied by Hkz on #scummvm - Multilingual - Used by ADI4 unlockable games
 	{
 		"gob1",
 		"",
