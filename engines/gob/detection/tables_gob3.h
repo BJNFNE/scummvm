@@ -249,7 +249,7 @@
 	kFeaturesAdLib,
 	0, 0, 0
 },
-{ // Found in Found in french ADI 2.5 Anglais Multimedia 5e
+{ // Found in french ADI 2.5 Anglais Multimedia 5e
 	{
 		"gob3",
 		"v1.00",
