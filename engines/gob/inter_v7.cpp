@@ -92,6 +92,7 @@ void Inter_v7::setupOpcodesDraw() {
 	OPCODEDRAW(0x90, o7_loadImage);
 	OPCODEDRAW(0x91, o7_copyDataToClipboard);
 	OPCODEDRAW(0x93, o7_setVolume);
+	OPCODEDRAW(0x94, o7_changeVolume);
 	OPCODEDRAW(0x95, o7_zeroVar);
 	OPCODEDRAW(0xA0, o7_draw0xA0);
 	OPCODEDRAW(0xA1, o7_getINIValue);
@@ -1144,6 +1145,12 @@ void Inter_v7::o7_setVolume() {
 	uint32 volume = _vm->_game->_script->readValExpr();
 
 	warning("Addy Stub: Set volume %d (0 - 100)", volume);
+}
+
+void Inter_v7::o7_changeVolume() {
+	uint32 volume = _vm->_game->_script->readValExpr();
+
+	warning("ADI4 Stub: Volume changed to %d", volume);
 }
 
 void Inter_v7::o7_zeroVar() {

@@ -735,6 +735,7 @@ protected:
 	void o7_loadImage();
 	void o7_copyDataToClipboard();
 	void o7_setVolume();
+	void o7_changeVolume();
 	void o7_zeroVar();
 	void o7_draw0xA0();
 	void o7_getINIValue();
