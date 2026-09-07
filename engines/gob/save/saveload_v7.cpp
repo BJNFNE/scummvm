@@ -942,6 +942,8 @@ SaveLoad_v7::SaveFile SaveLoad_v7::_saveFiles[] = {
 	{"DATA/iduser.tmp", kSaveModeSave, nullptr, nullptr},
 	{"adi.tmp", kSaveModeSave, nullptr, nullptr},
 	{"adi4.tmp", kSaveModeSave, nullptr, nullptr},
+	{"TEMP/INFOACCES.INI", kSaveModeSave, nullptr, nullptr},
+	{"TEMP/DUMMY.TMP", kSaveModeSave, nullptr, nullptr},
 
 	// Temporary sprites
 	{"ADI.$$$", kSaveModeSave, nullptr, nullptr},

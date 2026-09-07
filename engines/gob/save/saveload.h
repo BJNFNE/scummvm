@@ -982,7 +982,7 @@ public:
 	static const uint32 kAdibou2NbrOfSavedDrawings = 12;
 	static const uint32 kAdibou2NbrOfConstructionGameFiles = 3;
 
-	static const uint32 kAdi4NbrOfTempFiles = 3;
+	static const uint32 kAdi4NbrOfTempFiles = 5;
 	static const uint32 kAdi4NbrOfApplications = 4; // Only Math/Language/English/Euro for now
 	static const uint32 kAdi4NbrOfSchoolYears = 8;
 	// 13 isolated files, 1 "config" and "statv" file per child, 1 "dip" and "res" file per app x school year x child
