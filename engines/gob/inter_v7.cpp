@@ -1601,7 +1601,7 @@ void Inter_v7::o7_draw0xE8() {
 void Inter_v7::o7_draw0xE9() {
 	_vm->_game->_script->readVarIndex();
 	_vm->_game->_script->readVarIndex();
-	warning("STUB: o7_draw0xE8 (Adibou/Musique)");
+	warning("STUB: o7_draw0xE9 (Adibou/Musique)");
 }
 
 void Inter_v7::o7_draw0xF0() {
@@ -1624,12 +1624,12 @@ void Inter_v7::o7_executeModSetLength() {
 
 void Inter_v7::o7_executeModStart() {
 	_vm->_game->_script->readVarIndex();
-	warning("STUB: o7_executeModSetLength (Adibou/Musique)");
+	warning("STUB: o7_executeModStart (Adibou/Musique)");
 }
 
 void Inter_v7::o7_executeModGetPosition() {
 	_vm->_game->_script->readVarIndex();
-	warning("STUB: o7_executeModSetLength (Adibou/Musique)");
+	warning("STUB: o7_executeModGetPosition (Adibou/Musique)");
 }
 
 void Inter_v7::o7_vmdGetSoundBuffer() {
